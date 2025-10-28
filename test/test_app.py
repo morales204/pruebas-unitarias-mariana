@@ -36,3 +36,8 @@ def test_dividir_por_cero(cliente):
     r = cliente.get('/dividir?a=10&b=0')
     assert r.status_code == 400
     assert 'error' in r.get_json()
+
+def test_sumar_negativos(cliente):
+    r = cliente.get('/sumar?a=-5&b=-3')
+    assert r.status_code == 200
+    assert r.get_json()['resultado'] == -8
