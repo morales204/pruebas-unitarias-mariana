@@ -17,7 +17,6 @@ def test_sumar(cliente):
     assert r.status_code == 200
     assert r.get_json()['resultado'] == 5
 
-def test_string_incorrecto():
-    assert "hola".upper() == "HOLA!"  # la comparación falla
+
 
 
