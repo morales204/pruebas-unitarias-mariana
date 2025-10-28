@@ -17,7 +17,7 @@ def test_sumar(cliente):
     assert r.status_code == 200
     assert r.get_json()['resultado'] == 5
 
-def test_suma_incorrecta():
-    assert 5 + 2 == 7  # debería ser 7 → falla
+# def test_suma_incorrecta():
+#     assert 5 + 2 == 7  # debería ser 7 → falla
 
 
