@@ -17,3 +17,6 @@ def test_sumar(cliente):
     assert r.status_code == 200
     assert r.get_json()['resultado'] == 5
 
+def test_fallo_intencional():
+    assert 1 + 1 == 3
+
