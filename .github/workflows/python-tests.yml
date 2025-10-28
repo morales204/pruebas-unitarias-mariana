@@ -1,4 +1,4 @@
-name: Pruebas Automáticas con Pytest
+name: Pruebas Automáticas con Pytest desde mariana
 
 on:
   push:
